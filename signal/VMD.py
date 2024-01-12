@@ -8,7 +8,7 @@ import scipy.io
 matplotlib.rcParams["font.sans-serif"] = ["SimHei"]
 matplotlib.rcParams['axes.unicode_minus'] = False
 
-data3 = scipy.io.loadmat(r'./data/222.mat')
+data3 = scipy.io.loadmat(r'../data/222.mat')
 data_list = data3['X222_DE_time'].reshape(-1)
 signal = data_list[:1024]
 
