@@ -7,3 +7,17 @@
 
 ### utils
     1. datasets: 数据预处理
+
+### data
+    ├─data
+    │  ├─0HP
+    │  │      12k_Drive_End_B007_0_118.mat
+    │  │      12k_Drive_End_B014_0_185.mat
+    │  │      12k_Drive_End_B021_0_222.mat
+    │  │      12k_Drive_End_IR007_0_105.mat
+    │  │      12k_Drive_End_IR014_0_169.mat
+    │  │      12k_Drive_End_IR021_0_209.mat
+    │  │      12k_Drive_End_OR007@6_0_130.mat
+    │  │      12k_Drive_End_OR014@6_0_197.mat
+    │  │      12k_Drive_End_OR021@6_0_234.mat
+    │  │      normal_0_97.mat

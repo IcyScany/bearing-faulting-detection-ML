@@ -8,8 +8,8 @@ import matplotlib
 matplotlib.rcParams["font.sans-serif"] = ["SimHei"]
 matplotlib.rcParams['axes.unicode_minus'] = False
 
-data3 = scipy.io.loadmat(r'../data/222.mat')
-data_list = data3['X222_DE_time'].reshape(-1)
+data3 = scipy.io.loadmat(r'../data/0HP/12k_Drive_End_B007_0_118.mat')
+data_list = data3['X118_DE_time'].reshape(-1)
 data = data_list[:512]
 
 # 设置连续小波变换参数  设置采样周期为 1/12000，总尺度为 128，小波基函数选择 'cmor1-1'

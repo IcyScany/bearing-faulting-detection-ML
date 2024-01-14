@@ -8,7 +8,7 @@ matplotlib.rcParams["font.sans-serif"] = ["SimHei"]
 matplotlib.rcParams['axes.unicode_minus'] = False
 
 # 一、读入数据并进行FFT处理
-data = scipy.io.loadmat('../data/cwru/12k Drive End Bearing Fault Data/130.mat')
+data = scipy.io.loadmat('../data/0HP/12k_Drive_End_OR007@6_0_130.mat')
 X130_DE_time = data['X130_DE_time']
 
 fs = 12000  # 采样频率
