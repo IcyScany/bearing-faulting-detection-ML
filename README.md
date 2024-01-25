@@ -4,9 +4,15 @@
     2. fft： 连续傅里叶变换
     3. vmd: 变分模态分解
     4. cwt： 连续小波变换
+    5. ht: 希尔伯特变换
 
 ### utils
-    1. datasets: 数据预处理
+    1. augment: 数据预处理
+    2. feature: 信号特征提取
+    3. feature-plot: 信号特征分析图
+
+### 分类任务
+    1. ML： 机器学习
 
 ### data
     ├─data
