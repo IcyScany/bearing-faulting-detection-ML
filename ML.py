@@ -56,10 +56,8 @@ x_train, x_test, y_train, y_test = train_test_split(FX,
 
 # -4- 模型训练和保存
 # -4.1- K近邻
-knn = make_pipeline(StandardScaler(),
-                    KNeighborsClassifier(3))
+knn = make_pipeline(StandardScaler(), KNeighborsClassifier(3))
 knn.fit(x_train, y_train)
-# 保存Model(models 文件夹要预先建立，否则会报错)
 joblib.dump(knn, 'models/knn.pkl')
 
 y_pred = knn.predict(x_test)
@@ -70,18 +68,16 @@ print("KNN score is: %.3f" % score, "in test dataset")
 # -4.2- SVM
 svm = make_pipeline(StandardScaler(), SVC(kernel='rbf', gamma=0.5))
 svm.fit(x_train, y_train)
+joblib.dump(knn, 'models/svm.pkl')
 
 y_pred = svm.predict(x_test)
 score = svm.score(x_test, y_test) * 100
 print("svm accuracy is: %.5f " % accuracy_score(y_test, y_pred))
 print("svm score is: %.3f" % score,  "in test dataset")
-# print(classification_report(y_test, y_pred))
 
 # -4.3- 随机森林
-rfc = make_pipeline(StandardScaler(),
-                    RandomForestClassifier(max_depth=6, random_state=0))
+rfc = make_pipeline(StandardScaler(), RandomForestClassifier(max_depth=6, random_state=0))
 rfc.fit(x_train, y_train)
-
 joblib.dump(rfc, 'models/RandomForest.pkl')
 
 y_pred = rfc.predict(x_test)
